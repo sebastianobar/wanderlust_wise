@@ -40,3 +40,5 @@
 /node_modules
 
 /git-crypt.key
+
+/config/credentials/development.key

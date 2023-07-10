@@ -20,7 +20,7 @@ require 'action_cable/engine'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module HomeFinance
+module WanderlustWise
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -38,7 +38,7 @@ module HomeFinance
 
     config.active_job.queue_adapter = :sidekiq
 
-    config.i18n.available_locales = %i[en it es]
+    config.i18n.available_locales = %i[en it]
     config.i18n.default_locale = :en
   end
 end
