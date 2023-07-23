@@ -7,10 +7,14 @@ Rails.application.routes.draw do
 
   localized do
     devise_for :users
+    resources :travels do
+      get :search_destinations, on: :collection
+    end
     # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
     # Defines the root path route ("/")
     # root "articles#index"
+
     root 'pages#home'
   end
   authenticate :user, ->(u) { u.has_role? :app_admin } do

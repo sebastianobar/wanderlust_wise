@@ -8,4 +8,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_one_attached :avatar
+  has_many :travels, through: :roles, source: :resource, source_type: :Travel
 end

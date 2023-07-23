@@ -1,0 +1,20 @@
+
+<%= simple_form_for(@travel) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+
+    <div data-controller="autocomplete" data-autocomplete-url-value=<%=search_destinations_travels_path%> role="combobox">
+      <%= f.input :destination_address, input_html: { "data-autocomplete-target": "input"}  %>
+      <ul class="list-group" data-autocomplete-target="results"></ul>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
