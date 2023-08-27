@@ -12,8 +12,8 @@ gem install mailcatcher
 
 bundle install
 
-docker run --name local-togheterbill-pg -e POSTGRES_HOST_AUTH_METHOD=trust -p 5432:5432 -d postgres
-docker run --name local-togheterbill-redis -p 6379:6379 -d redis
+docker run --name local-pg -e POSTGRES_HOST_AUTH_METHOD=trust -p 5432:5432 -d postgres
+docker run --name local-redis -p 6379:6379 -d redis
 
 bin/rails db:prepare
 
