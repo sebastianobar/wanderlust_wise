@@ -18,7 +18,7 @@ module.exports = {
     extend: {
       // that is animation class
       animation: {
-        'fade-out': 'fadeOut 5s both',
+        'fade-out': 'fadeOut 3s both',
       },
       keyframes: {
         fadeOut: {

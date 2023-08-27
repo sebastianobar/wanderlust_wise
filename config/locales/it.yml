@@ -1,2 +1,4 @@
 it:
-  app_name: "AppName"
+  app_name: "WanderlustWise"
+  menu:
+    travel_page: "I Miei Viaggi"

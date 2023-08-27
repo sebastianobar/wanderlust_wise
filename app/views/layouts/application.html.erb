@@ -14,6 +14,17 @@
     <div id="flash" class="flash">
       <%= render Layout::FlashComponent.new(flash:)%>
     </div>
+
+    <%= render Layout::NavBarComponent.new(links: [
+      {
+        href: root_path,
+        text: "Home"
+      },
+      {
+        href: travels_path,
+        text: t('menu.travels')
+      }
+    ], user_signed_in: user_signed_in?, user: current_user) %>
     <%= yield %>
   </body>
 </html>

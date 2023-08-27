@@ -40,5 +40,7 @@ module WanderlustWise
 
     config.i18n.available_locales = %i[en it]
     config.i18n.default_locale = :en
+    
+    config.view_component.default_preview_layout = "component_preview"
   end
 end
