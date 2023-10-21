@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.7', '>= 7.0.7'
+gem 'rails', '~> 7.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -55,21 +55,21 @@ gem 'image_processing', '~> 1.2'
 
 gem 'devise', '~> 4.9'
 
-gem 'simple_form', '~> 5.2'
+gem 'simple_form', '~> 5.3'
 
-gem 'view_component', '~> 3.5'
+gem 'view_component', '~> 3.6'
 
-gem 'action_policy', '~> 0.6.5'
+gem 'action_policy', '~> 0.6'
 
 gem 'sidekiq', '~> 7.1'
 
-gem 'rails-i18n', '~> 7.0'
+gem 'rails-i18n', '~> 7'
 
-gem 'devise-i18n', '~> 1.11'
+gem 'devise-i18n', '~> 1'
 
-gem 'route_translator', '~> 13.1'
+gem 'route_translator', '~> 14'
 
-gem 'devise_invitable', '~> 2.0'
+gem 'devise_invitable', '~> 2'
 
 gem 'rolify', '~> 6.0'
 
@@ -90,18 +90,18 @@ group :development, :test do
 
   gem 'rubocop', '~> 1.52'
 
-  gem 'rubocop-rails', '~> 2.19'
+  gem 'rubocop-rails', '~> 2'
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
-  gem 'bundler-audit', '~> 0.9.1'
+  gem 'bundler-audit', '~> 0'
 
   gem 'brakeman', '~> 6.0'
 
-  gem 'lookbook', '~> 2.0'
+  gem 'lookbook', '~> 2'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -109,5 +109,5 @@ group :development do
   # gem "spring"
 end
 
-gem 'geocoder', '~> 1.8'
+gem 'geocoder', '~> 1'
 
